@@ -9,9 +9,31 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Welcome</title>
     </head>
+    <%
+          String tos = request.getParameter("tos");
+    %>
     <body>
-        <h1>Hello World!</h1>
+        <header style="text-align:center;">
+            <a href="main.jsp">Home</a>
+            <a href="welcome.jsp">Account</a>
+            <a href="index_logout.jsp">Logout</a>
+        </header>
+        <%
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            String password = request.getParameter("password");
+            String gender = request.getParameter("gender");
+        %>
+        <%if(request.getParameter("tos") != null){ %>
+        <h1>Welcome <%= name%></h1>
+        <p>Your email is <%= email%></p>
+        <p>Your password is <%= password%></p>
+        <p>Your gender is <%= gender%></p>
+        <%}else{%>
+        <p>Sorry, you must agree to the Terms of Service.</p>
+        <a href="register.jsp">Click here to go back</a>
+        <%}%>
     </body>
 </html>
