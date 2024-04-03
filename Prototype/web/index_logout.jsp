@@ -15,7 +15,7 @@
         <h1>Welcome!</h1>
         <div>
             <a href ="register.jsp">Register</a>
-            
+            <br>
             <a href ="login.jsp">Login</a>
         </div>
     </body>
