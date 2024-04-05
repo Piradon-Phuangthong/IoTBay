@@ -1,7 +1,6 @@
 <%-- 
     Document   : edit_user
     Created on : 05/04/2024, 11:32:28 AM
-    Author     : zoe10
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -37,6 +36,8 @@
         <p>No user logged in.</p>
     <% } %>
     
-    <a href="index.jsp">Back to Main Page</a>
+    <a href="index.jsp">
+        <button class="button">Back to Main Page</button>
+    </a>
 </body>
 </html>
