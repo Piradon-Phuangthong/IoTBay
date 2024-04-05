@@ -5,7 +5,6 @@ and open the template in the editor.
 */
 /* 
     Created on : 22/03/2024, 11:51:01 AM
-    Author     : zoe10
 */
 body{
     /* background image */
@@ -61,14 +60,16 @@ input{
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: #FFFFFF;
-    background-colour: #FFFFFF;
+    color: #FFF;
+    background-color: #3A69AB;
     border: none;
     border-radius: 10px;
     width: 80px;
 }
 
-.button:hover{background-color: #ADD8E6}
+.button:hover{
+    background-color: #ADD8E6
+}
 
 .button:active{
     background-color: #ADD8E6;
