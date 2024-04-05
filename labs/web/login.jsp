@@ -1,9 +1,9 @@
 <%-- 
     Document   : login
     Created on : 05/04/2024, 1:47:21 PM
-    Author     : btjhi
 --%>
 
+<%@page import="uts.isd.model.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,8 +16,8 @@
         <h1>Enter your sign-in details: </h1>
         <form action="checkuser.jsp" method="post">
             <table>
-                <tr><td>Email: </td><td><input type="text" placeholder="Enter Email" name="email"></td></tr>
-                <tr><td>Password: </td><td><input type="password" placeholder="Enter Password" name="password"></td></tr>
+                <tr><td>Email: </td><td><input type="text" placeholder="Enter Email" name="email" required></td></tr>
+                <tr><td>Password: </td><td><input type="password" placeholder="Enter Password" name="password" required></td></tr>
             </table>
             <div>
                 <input class="button" type="submit" value="Login">
