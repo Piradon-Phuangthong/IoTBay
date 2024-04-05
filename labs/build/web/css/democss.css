@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/03/2024, 11:51:01 AM
+    Author     : zoe10
+*/
+body{
+    /* background image */
+    background: url("background.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-sherif;
+    color: #FFFFFF;
+}
+h1{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.p{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.link{
+    color: #ADD8E6;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+td{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+
+input{
+    color: black;
+    width: 140%;
+    height: 30px;
+    display: inline-block;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background: #f1f1f1;
+}
+
+.button{
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #FFFFFF;
+    background-colour: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.button:hover{background-color: #ADD8E6}
+
+.button:active{
+    background-color: #ADD8E6;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.user-info a {
+    margin-right: 20px; /* Adjust as needed */
+}
