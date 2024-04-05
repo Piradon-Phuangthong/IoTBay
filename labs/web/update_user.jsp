@@ -17,17 +17,14 @@
     <h1>Update User Details</h1>
     
     <% 
-        // Retrieve form data
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String gender = request.getParameter("gender");
         String address = request.getParameter("address");
         
-        // Retrieve User JavaBean from session
         User user = (User) session.getAttribute("user");
         
-        // Update user details in the JavaBean
         if (user != null) {
             user.setName(name);
             user.setEmail(email);
