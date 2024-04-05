@@ -1,7 +1,6 @@
 <%-- 
     Document   : register2
     Created on : 20/03/2024, 7:10:05 PM
-    Author     : zoe10
 --%>
 
 <%@page import="uts.isd.model.User"%>
@@ -35,10 +34,14 @@
         // Store User JavaBean into session
         session.setAttribute("user", user);
     %>
-            <a href="index.jsp">Proceed to Main Page</a>
+            <a href="index.jsp">
+                <button class="button">Proceed to Main Page</button>
+            </a>
             <% } else { %>
                 <p>To register, you must agree to the terms of service.</p>
-                <a href="one.jsp">Register</a>
+                <a href="one.jsp">
+                    <button class="button">Register</button>
+                </a>
             <% }
         } else { %>
             <h1>Sign Up</h1>
