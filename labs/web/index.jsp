@@ -40,7 +40,7 @@
         <% } else { %>
             <div>
                 <p>Please log in to view your details.</p>
-                <a class="button" href="one.jsp">Register</a>
+                <a class="button" href="login.jsp">Login</a>
             </div>
         <% } %>
     </div>
