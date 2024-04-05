@@ -1,7 +1,6 @@
 <%-- 
     Document   : index
     Created on : 05/04/2024, 10:33:48 AM
-    Author     : zoe10
 --%>
 
 <%@page import="uts.isd.model.User"%>
@@ -39,7 +38,7 @@
             </div>
         <% } else { %>
             <div>
-                <p>Please log in to view your details.</p>
+                <p>Please log in to view your details. </p>
                 <a class="button" href="login.jsp">Login</a>
             </div>
         <% } %>
@@ -49,7 +48,6 @@
         <% if (user != null) { %>
             <p>You are logged in as <%= user.getName() %>, <%= user.getEmail() %></p>
             <a href="logout.jsp">Logout</a>
-            <%-- Invalidate session on logout --%>
             
             <a href="edit_user.jsp">My Account</a>
         <% } %>
