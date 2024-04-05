@@ -1,7 +1,6 @@
 <%-- 
     Document   : update_user
     Created on : 05/04/2024, 11:36:03 AM
-    Author     : zoe10
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -45,6 +44,8 @@
     <% 
         } 
     %>
-    <a href="index.jsp">Back to Main Page</a>
+    <a href="index.jsp">
+        <button href="button">Back to Main Page</button>
+    </a>
 </body>
 </html>
