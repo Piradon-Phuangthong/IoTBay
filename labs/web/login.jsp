@@ -14,7 +14,7 @@
     </head>
     <body>
         <h1>Enter your sign-in details: </h1>
-        <form action="one.jsp" method="post">
+        <form action="checkuser.jsp" method="post">
             <table>
                 <tr><td>Email: </td><td><input type="text" placeholder="Enter Email" name="email"></td></tr>
                 <tr><td>Password: </td><td><input type="password" placeholder="Enter Password" name="password"></td></tr>
