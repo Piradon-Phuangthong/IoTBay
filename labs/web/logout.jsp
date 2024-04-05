@@ -1,7 +1,6 @@
 <%-- 
     Document   : logout
     Created on : 05/04/2024, 10:40:09 AM
-    Author     : zoe10
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
