@@ -1,7 +1,6 @@
 <%-- 
     Document   : index
     Created on : 05/04/2024, 10:33:48 AM
-    Author     : zoe10
 --%>
 
 <%@page import="uts.isd.model.User"%>
@@ -11,48 +10,24 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Main Page</title>
-    <style>
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            height: 80vh;
-        }
-        .user-info {
-            text-align: right;
-            margin-bottom: 10px;
-        }
-        .top-left {
-            align-self: flex-start;
-        }
-    </style>
     <link rel="stylesheet" href="css/democss.css">
 </head>
 <body>
-    <div class="container">
-        <%-- Retrieve User JavaBean from session --%>
-        <% User user = (User) session.getAttribute("user"); %>
-        
-        <% if (user != null) { %>
-            <div>
-                <h1>Main Page</h1>
+    <% User user = (User) session.getAttribute("user"); %>
+    <% if (user != null) { %>
+        <div class="login-box"> <!-- Apply the light blue box styling when user is logged in -->
+            <h1>Welcome, <%= user.getName() %>!</h1>
+            <div class="user-info">
+                <p>Your email is <%= user.getEmail() %></p>
+                <a href="logout.jsp" class="button">Logout</a>
+                <a href="edit_user.jsp" class="button">My Account</a>
             </div>
-        <% } else { %>
-            <div>
-                <p>Please log in to view your details.</p>
-                <a class="button" href="one.jsp">Register</a>
-            </div>
-        <% } %>
-    </div>
-
-    <div class="user-info">
-        <% if (user != null) { %>
-            <p>You are logged in as <%= user.getName() %>, <%= user.getEmail() %></p>
-            <a href="logout.jsp">Logout</a>
-            <%-- Invalidate session on logout --%>
-            
-            <a href="edit_user.jsp">My Account</a>
-        <% } %>
-    </div>
+        </div>
+    <% } else { %>
+        <div class="login-box"> <!-- You can also apply the styling for consistency even if not logged in -->
+            <p>Please log in to view your details.</p>
+            <a class="button" href="login.jsp">Login</a>
+        </div>
+    <% } %>
 </body>
 </html>

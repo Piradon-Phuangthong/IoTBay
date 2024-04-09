@@ -1,93 +1,30 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 22/03/2024, 11:51:01 AM
-    Author     : zoe10
-*/
-body{
-    /* background image */
-    background: url("background.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-sherif;
-    color: #FFFFFF;
-}
-h1{
-    color: #FFFFFF;
-    font-weight: bold;
+body {
+    background-image: url('background.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-.p{
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.link{
-    color: #ADD8E6;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-td{
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 5px;
-}
-
-input{
-    color: black;
-    width: 140%;
-    height: 30px;
-    display: inline-block;
-    border: none;
-    font-size: 14px;
-    font-weight: bold;
-    background: #f1f1f1;
-}
-
-.button{
-    display: inline-block;
-    padding: 6px 10px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: white;
-    background-colour: darkblue;
-    border: none;
+.login-box {
+    background-color: #ADD8E6; /* Light blue background */
+    padding: 20px;
     border-radius: 10px;
-    width: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the flex items horizontally */
+    justify-content: center; /* Center-align the flex items vertically */
 }
 
-.button:hover{
-    background-color: #ADD8E6;
-    color: white;
+.form-container {
+    width: 100%; /* Make the form container take up all the available width */
 }
 
-
-.button:active{
-    background-color: #ADD8E6;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    color: lightblue;
-}
-
-.user-info a {
-    margin-right: 20px; /* Adjust as needed */
+table {
+    margin: auto; /* This will center the table within the .form-container */
 }
