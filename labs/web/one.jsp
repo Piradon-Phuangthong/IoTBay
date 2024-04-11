@@ -50,14 +50,14 @@
                     <div class="form-container"> <!-- This div wraps the form contents and centers them -->
                         <table>
                             <tr><td>Full Name: </td><td><input type="text" class="input-field" placeholder="Enter Name" name="name" required="true"></td></tr>
-                            <tr><td>Email: </td><td><input type="text" class="input-field" placeholder="Enter Email" name="email"></td></tr>
+                            <tr><td>Email: </td><td><input type="email" class="input-field" placeholder="Enter Email" name="email"></td></tr>
                             <tr><td>Password: </td><td><input type="password" class="input-field" placeholder="Enter Password" name="password"></td></tr>
                             <tr><td>Gender: </td><td><input type="text" class="input-field" placeholder="Enter Gender" name="gender"></td></tr>
                             <tr><td>Address:</td><td><input type="text" class="input-field" placeholder="Enter Address" name="address"></td></tr>
                             <tr><td>Agree to TOS:</td><td><input type="checkbox" name="tos"></td></tr>
                         </table>
                         <input type="hidden" name="submitted" value="yes">
-                        <div>
+                        <div class="buttons">
                             <input class="button" type="submit" value="Register">
                             <a class="button" href="index.html">Cancel</a>
                         </div>

@@ -21,11 +21,13 @@
                         <tr><td>Email:</td><td><input type="text" placeholder="Enter Email" name="email" required></td></tr>
                         <tr><td>Password:</td><td><input type="password" placeholder="Enter Password" name="password" required></td></tr>
                     </table>
-                    <div>
+                    <div class="buttons">
                         <input class="button" type="submit" value="Login">
+                        <a class="button" href="index.html">Cancel</a>
                     </div>
                 </form>
             </div>
+            
         </div>
     </body>
 </html>
